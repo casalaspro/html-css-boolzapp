@@ -65,7 +65,7 @@ ul, li, menu{
   background-color: #E3DED6;
 }
 
-.messages .mess-content{
+.messages .mess-text-bar{
   background-color: rgb(255, 115, 0);
 }
 
@@ -109,7 +109,11 @@ ul, li, menu{
   display: none;
 }
 
-/*  */
+/* MESSAGES */
+
+.messages .mess-head, .messages .mess-text-bar{
+  height: var(--head);
+}
 
 /* UTILITIES */
 
