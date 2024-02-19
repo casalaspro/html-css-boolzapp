@@ -3,6 +3,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a{
@@ -12,4 +13,28 @@ a{
 
 ul, li, menu{
   list-style: none;
+}
+
+
+
+/* DEBUG */
+
+.container{
+  border: solid 4px greenyellow;
+}
+
+#app{
+  border: solid 4px coral;
+}
+
+/*-------- LAYOUT --------*/
+
+.container{
+  height: 100vh;
+}
+
+#app{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
 }
