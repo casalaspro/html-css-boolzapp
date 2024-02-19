@@ -19,13 +19,23 @@ ul, li, menu{
 
 /* DEBUG */
 
-.container{
+.debug .container{
   border: solid 4px greenyellow;
 }
 
-#app{
+.debug #app{
   border: solid 4px coral;
 }
+
+.debug .navigator{
+  background-color: aqua;
+}
+
+.debug .messages{
+  background-color: aqua;
+}
+
+
 
 /*-------- LAYOUT --------*/
 
@@ -39,7 +49,26 @@ ul, li, menu{
   margin: 0 auto;
 }
 
+.navigator{
+  height: 100%;
+  display: none;
+}
+
+/* UTILITIES */
+
+.flex{
+  display: flex;
+}
+
+
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 992px){
+  .nabigator{
+    display: block;
+    width: 80px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   #app{
@@ -50,4 +79,10 @@ ul, li, menu{
   .container{
     padding: 32px 0;
   }
+
+  .navigator{
+    width:380px;
+  }
 }
+
+
