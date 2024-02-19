@@ -67,10 +67,16 @@ ul, li, menu{
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 576px){
   .navigator{
     display: block;
     width: 80px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .navigator{
+    width:380px;
   }
 }
 
@@ -84,9 +90,7 @@ ul, li, menu{
     padding: 32px 0;
   }
 
-  .navigator{
-    width:380px;
-  }
+  
 }
 
 
