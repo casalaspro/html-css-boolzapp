@@ -19,6 +19,7 @@ ul, li, menu{
 
 :root{
   --head: 70px;
+  --notifications: #A6D7F9;
 }
 
 
@@ -41,6 +42,21 @@ ul, li, menu{
   background-color: rgb(255, 221, 0);
 }
 
+.debug .navigator .notifications{
+  height: 80px;
+}
+
+.debug .navigator .nav-search{
+  height: 50px;
+  background-color: lightgray;
+}
+
+.debug .navigator .contact-cards li{
+  height: 80px;
+  background-color: cadetblue;
+  border: 1px solid black;
+}
+
 
 
 /*-------- LAYOUT --------*/
@@ -58,6 +74,7 @@ ul, li, menu{
 .navigator{
   height: 100%;
   display: none;
+  overflow-y: auto;
 }
 
 .messages{
@@ -68,6 +85,11 @@ ul, li, menu{
 
 .navigator .nav-head{
   height: var(--head);
+  background-color: bisque;
+}
+
+.navigator .notifications{
+  background-color: var(--notifications);
 }
 
 /* UTILITIES */
