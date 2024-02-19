@@ -32,7 +32,7 @@ ul, li, menu{
 }
 
 .debug .messages{
-  background-color: aqua;
+  background-color: rgb(255, 221, 0);
 }
 
 
@@ -54,6 +54,10 @@ ul, li, menu{
   display: none;
 }
 
+.messages{
+  flex-grow: 1;
+}
+
 /* UTILITIES */
 
 .flex{
@@ -64,7 +68,7 @@ ul, li, menu{
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 992px){
-  .nabigator{
+  .navigator{
     display: block;
     width: 80px;
   }
