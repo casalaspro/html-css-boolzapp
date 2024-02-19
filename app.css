@@ -15,6 +15,12 @@ ul, li, menu{
   list-style: none;
 }
 
+/* VAR */
+
+:root{
+  --head: 70px;
+}
+
 
 
 /* DEBUG */
@@ -56,6 +62,12 @@ ul, li, menu{
 
 .messages{
   flex-grow: 1;
+}
+
+/* NAVIGATOR */
+
+.navigator .nav-head{
+  height: var(--head);
 }
 
 /* UTILITIES */
