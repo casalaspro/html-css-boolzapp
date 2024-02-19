@@ -57,6 +57,18 @@ ul, li, menu{
   border: 1px solid black;
 }
 
+.messages .mess-head{
+  background-color: #EAEAEA;  
+}
+
+.messages .mess-content{
+  background-color: #E3DED6;
+}
+
+.messages .mess-content{
+  background-color: rgb(255, 115, 0);
+}
+
 
 
 /*-------- LAYOUT --------*/
@@ -90,7 +102,14 @@ ul, li, menu{
 
 .navigator .notifications{
   background-color: var(--notifications);
+  display: none;
 }
+
+.navigator .nav-search{
+  display: none;
+}
+
+/*  */
 
 /* UTILITIES */
 
@@ -111,6 +130,9 @@ ul, li, menu{
 @media screen and (min-width: 992px){
   .navigator{
     width:380px;
+  }
+  .navigator .notifications, .navigator .nav-search{
+    display: block;
   }
 }
 
