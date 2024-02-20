@@ -22,6 +22,7 @@ ul, li, menu{
   --notifications: #A6D7F9;
   --nav-bg: #EAEAEA;
   --grey-text: #B1B1B1;
+  --grey-border: #D6D6D6;
 }
 
 
@@ -105,6 +106,10 @@ ul, li, menu{
 
 /* NAVIGATOR */
 
+.navigator{
+  border-right: 1px solid var(--grey-border);
+}
+
 .navigator .nav-head{
   height: var(--head);
   background-color: var(--nav-bg);
@@ -178,9 +183,15 @@ ul, li, menu{
   .navigator .notifications, .navigator .nav-search{
     display: block;
   }
+
+  .navigator .card-img{
+    margin: 0 0;
+  }
+
   .navigator .nav-head__icons{
     display: block;
   }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -192,6 +203,8 @@ ul, li, menu{
   .container{
     padding: 32px 0;
   }
+
+  
 
   
 }
