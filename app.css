@@ -103,7 +103,13 @@ ul, li, menu{
 
 .navigator .nav-head{
   height: var(--head);
-  background-color: bisque;
+  background-color: var(--head);
+  padding: 10px 7px;
+}
+
+.navigator .card-img{
+  display: block;
+  border-radius: 50%;
 }
 
 .navigator .notifications{
@@ -114,6 +120,8 @@ ul, li, menu{
 .navigator .nav-search{
   display: none;
 }
+
+
 
 /* MESSAGES */
 
