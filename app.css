@@ -21,6 +21,7 @@ ul, li, menu{
   --head: 70px;
   --notifications: #A6D7F9;
   --nav-bg: #EAEAEA;
+  --grey-text: #B1B1B1;
 }
 
 
@@ -106,11 +107,24 @@ ul, li, menu{
   height: var(--head);
   background-color: var(--nav-bg);
   padding: 10px 7px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigator .card-img{
   display: block;
   border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+.navigator .nav-head__icons{
+  font-size: 20px;
+  color: var(--grey-text);
+}
+
+.navigator .nav-head__icons i{
+  margin-right: 20px;
 }
 
 .navigator .notifications{
