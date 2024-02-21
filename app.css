@@ -15,6 +15,10 @@ ul, li, menu{
   list-style: none;
 }
 
+input{
+  border: none;
+}
+
 /* VAR */
 
 :root{
@@ -112,6 +116,7 @@ body{
 
 .navigator{
   border-right: 1px solid var(--grey-border);
+  background-color: #FAFAFA;
 }
 
 .navigator .nav-head{
@@ -165,6 +170,33 @@ body{
   font-size: 20px;
   color: var(--notifications);
 }
+
+/* NAV-SEARCH */
+
+  .nav-search{
+    padding: 8px;
+    position: relative;
+  }
+
+  .nav-search input{
+    height: 35px;
+    width: 100%;
+    padding-left: 60px;
+    border: 1px solid #F5F5F5;
+  }
+
+  .nav-search input:focus-visible{
+    outline: none;
+  }
+
+  .nav-search i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    color: #B7B9BB;
+    pointer-events: none;
+  }
 
 
 
@@ -220,6 +252,7 @@ body{
   .notifications .notifications__subtitle{
     color: #5C7284;
     text-decoration: underline;
+    margin-top: 6px;
   }
 
   /* .navigator .card-img{
