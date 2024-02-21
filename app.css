@@ -29,6 +29,7 @@ input{
   --grey-border: #D6D6D6;
   --grey-subtitle: #B8BABC;
   --grey-border: #E8E8E8;
+  --grey-bar: #F2EEEB;
 }
 
 
@@ -73,10 +74,6 @@ input{
 .messages .mess-content{
   background-color: #E3DED6;
 } */
-
-.messages .mess-text-bar{
-  background-color: rgb(255, 115, 0);
-}
 
 
 
@@ -136,18 +133,18 @@ body{
   aspect-ratio: 1/1;
 }
 
-.navigator .nav-head__icons{
+.head__icons{
   font-size: 20px;
   color: var(--grey-text);
   display: none;
 }
 
-.navigator .nav-head__icons i{
+.navigator .head__icons i{
   padding: 0 10px;
 }
 
 .navigator .nav-search{
-  emdisplay: none;
+  display: none;
 }
 
 /* NOTIFICATIONS */
@@ -218,16 +215,33 @@ body{
 
 .mess-text-bar{
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
+  background-color: var(--grey-bar);
 }
 
 .mess-text-bar input{
   height: 50px;
   padding-left: 18px;
+  flex-grow: 1;
+  border-radius: 3px;
 }
 
 .mess-text-bar i{
   font-size: 25px;
+  margin: 0 25px;
+}
+
+/* MESS-HEAD */
+
+.mess-head .toast .card-img{
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+.mess-head .toast{
+  padding: 10px 15px;
 }
 
 /* CONTACT-CARDS */
@@ -237,13 +251,13 @@ body{
 }
 
 .toast{
-  padding: 15px;
   display: none;
   border-right: 1px solid var(--grey-border);
   background-color: white;
 }
 
 .contact-cards li .toast{
+  padding: 15px;
   border-bottom: 1px solid var(--grey-border);
 }
 
@@ -276,6 +290,14 @@ body{
   display: none;
 }
 
+.toast{
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
+
+
 
 /* UTILITIES */
 
@@ -298,7 +320,7 @@ body{
   /* .navigator .card-img{
     margin: 0 auto;
   } */
-  .toast{
+  .contact-cards .toast{
     display: flex;
     column-gap: 15px;
     align-items: center;
@@ -338,7 +360,7 @@ body{
     margin: 0 0;
   } */
 
-  .navigator .nav-head__icons{
+  .navigator .head__icons{
     display: block;
   }
 
