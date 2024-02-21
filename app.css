@@ -76,6 +76,10 @@ ul, li, menu{
 
 /*-------- LAYOUT --------*/
 
+body{
+  font-family: "Roboto", sans-serif;
+}
+
 .container{
   height: 100vh;
   background: rgb(219,219,211);
@@ -205,10 +209,17 @@ ul, li, menu{
   .notifications{
     display: flex;
     align-items: center;
+    column-gap: 15px;
   }
 
   .notifications .notifications__info{
     flex-grow: 1;
+    font-size: 11px;
+  }
+
+  .notifications .notifications__subtitle{
+    color: #5C7284;
+    text-decoration: underline;
   }
 
   /* .navigator .card-img{
