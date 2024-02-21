@@ -211,6 +211,13 @@ body{
   overflow-y: auto;
 }
 
+/* CONTACT-CARDS */
+
+.toast{
+  padding: 15px;
+  display: none;
+}
+
 /* UTILITIES */
 
 .flex{
