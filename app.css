@@ -111,6 +111,16 @@ body{
   flex-direction: column;
 }
 
+.head__icons{
+  font-size: 20px;
+  color: var(--grey-text);
+  display: none;
+}
+
+.head__icons i{
+  padding: 0 10px;
+}
+
 /* NAVIGATOR */
 
 .navigator{
@@ -131,16 +141,6 @@ body{
   border-radius: 50%;
   width: 50px;
   aspect-ratio: 1/1;
-}
-
-.head__icons{
-  font-size: 20px;
-  color: var(--grey-text);
-  display: none;
-}
-
-.navigator .head__icons i{
-  padding: 0 10px;
 }
 
 .navigator .nav-search{
@@ -324,6 +324,10 @@ body{
     display: flex;
     column-gap: 15px;
     align-items: center;
+  }
+
+  .mess-head .head__icons{
+    display: block;
   }
 }
 
