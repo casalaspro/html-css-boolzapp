@@ -146,6 +146,16 @@ ul, li, menu{
 
 /* NOTIFICATIONS */
 
+.notifications{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.notifications .notifications__info{
+  flex-grow: 1;
+}
+
 .notifications .notifications__icon{
   border-radius: 50%;
   width: 50px;
