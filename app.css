@@ -27,13 +27,15 @@ input{
   --nav-bg: #EAEAEA;
   --grey-text: #B1B1B1;
   --grey-border: #D6D6D6;
+  --grey-subtitle: #B8BABC;
+  --grey-border: #E8E8E8;
 }
 
 
 
 /* DEBUG */
 
-.debug .container{
+/* .debug .container{
   border: solid 4px greenyellow;
 }
 
@@ -43,7 +45,7 @@ input{
 
 .debug .navigator{
   background-color: aqua;
-}
+} */
 
 .debug .messages{
   background-color: rgb(255, 221, 0);
@@ -53,7 +55,7 @@ input{
   height: 80px;
 } */
 
-.debug .navigator .nav-search{
+/* .debug .navigator .nav-search{
   height: 50px;
   background-color: lightgray;
 }
@@ -70,7 +72,7 @@ input{
 
 .messages .mess-content{
   background-color: #E3DED6;
-}
+} */
 
 .messages .mess-text-bar{
   background-color: rgb(255, 115, 0);
@@ -213,9 +215,41 @@ body{
 
 /* CONTACT-CARDS */
 
+.contact-cards{
+  border-right: 1px solid var(--grey-border);
+  padding-right: 15px;
+}
+
 .toast{
   padding: 15px;
   display: none;
+  border-right: 1px solid var(--grey-border);
+  background-color: white;
+}
+
+.toast:not(:last-child){
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.toast .card-text{
+  flex-grow: 1;
+}
+
+.toast .card-name{
+  font-size: 15px;
+}
+
+.toast .card-status{
+  margin-top: 8px;
+}
+
+.toast .card-status, .toast .card-time{
+  font-size: 13px;
+  color: var(--grey-subtitle);
+}
+
+.toast .card-time{
+  align-self: flex-start;
 }
 
 /* UTILITIES */
@@ -235,6 +269,11 @@ body{
   /* .navigator .card-img{
     margin: 0 auto;
   } */
+  .toast{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 992px){
