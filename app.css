@@ -178,13 +178,16 @@ body{
   .nav-search{
     padding: 8px;
     position: relative;
+    display: none;
   }
+
 
   .nav-search input{
     height: 35px;
     width: 100%;
     padding-left: 60px;
     border: 1px solid #F5F5F5;
+    border-radius: 3px;
   }
 
   .nav-search input:focus-visible{
@@ -204,7 +207,7 @@ body{
 
 /* MESSAGES */
 
-.messages .mess-head, .messages .mess-text-bar{
+.messages .mess-head{
   height: var(--head);
 }
 
@@ -213,11 +216,24 @@ body{
   overflow-y: auto;
 }
 
+.mess-text-bar{
+  align-items: center;
+  padding: 10px;
+}
+
+.mess-text-bar input{
+  height: 50px;
+  padding-left: 18px;
+}
+
+.mess-text-bar i{
+  font-size: 25px;
+}
+
 /* CONTACT-CARDS */
 
 .contact-cards{
   border-right: 1px solid var(--grey-border);
-  padding-right: 15px;
 }
 
 .toast{
@@ -227,8 +243,12 @@ body{
   background-color: white;
 }
 
-.toast:not(:last-child){
+.contact-cards li .toast{
   border-bottom: 1px solid var(--grey-border);
+}
+
+.contact-cards li:last-child .toast{
+  border-bottom: none;
 }
 
 .toast .card-text{
@@ -252,10 +272,19 @@ body{
   align-self: flex-start;
 }
 
+.contact-cards .toast .card-text, .contact-cards .toast .card-time{
+  display: none;
+}
+
+
 /* UTILITIES */
 
 .flex{
   display: flex;
+}
+
+.display-none{
+  display: none;
 }
 
 
@@ -301,11 +330,23 @@ body{
     margin-top: 6px;
   }
 
+  .nav-search{
+    display: block;
+  }
+
   /* .navigator .card-img{
     margin: 0 0;
   } */
 
   .navigator .nav-head__icons{
+    display: block;
+  }
+
+  .contact-cards{
+    padding-right: 15px;
+  }
+
+  .contact-cards .toast .card-text, .contact-cards .toast .card-time{
     display: block;
   }
   
