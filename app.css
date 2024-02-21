@@ -30,6 +30,7 @@ input{
   --grey-subtitle: #B8BABC;
   --grey-border: #E8E8E8;
   --grey-bar: #F2EEEB;
+  --message-bg: #DEF8C0;
 }
 
 
@@ -215,7 +216,7 @@ body{
 
 .mess-text-bar{
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 10px;
   background-color: var(--grey-bar);
 }
 
@@ -229,7 +230,12 @@ body{
 .mess-text-bar i{
   font-size: 25px;
   margin: 0 25px;
+  display: none;
 }
+
+/* .messages{
+  overflow: hidden;
+} */
 
 /* MESS-HEAD */
 
@@ -242,6 +248,27 @@ body{
 
 .mess-head .toast{
   padding: 10px 15px;
+}
+
+/* MESS-CONTENT */
+
+.mess-content{
+  background-image: url(./img/mine.jpg);
+  overflow: scroll;
+  flex-direction: column;
+}
+
+.mess-content .message{
+  max-width: 140px;
+  background-color: var(--message-bg);
+}
+
+.mess-content .message.mine{
+  align-self: flex-end;
+}
+
+.mess-content .message.other{
+  align-self: flex-start;
 }
 
 /* CONTACT-CARDS */
@@ -327,6 +354,14 @@ body{
   }
 
   .mess-head .head__icons{
+    display: block;
+  }
+
+  .mess-text-bar{
+    padding: 10px 0px;
+  }
+
+  .mess-text-bar i{
     display: block;
   }
 }
