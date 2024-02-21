@@ -144,6 +144,23 @@ ul, li, menu{
   display: none;
 }
 
+/* NOTIFICATIONS */
+
+.notifications .notifications__icon{
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.notifications i{
+  font-size: 20px;
+  color: var(--notifications);
+}
+
 
 
 /* MESSAGES */
