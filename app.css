@@ -113,7 +113,7 @@ ul, li, menu{
 .navigator .nav-head{
   height: var(--head);
   background-color: var(--nav-bg);
-  padding: 10px 7px;
+  padding: 10px 15px;
   align-items: center;
   justify-content: space-between;
 }
@@ -171,9 +171,9 @@ ul, li, menu{
     display: block;
     width: 80px;
   }
-  .navigator .card-img{
+  /* .navigator .card-img{
     margin: 0 auto;
-  }
+  } */
 }
 
 @media screen and (min-width: 992px){
@@ -184,9 +184,9 @@ ul, li, menu{
     display: block;
   }
 
-  .navigator .card-img{
+  /* .navigator .card-img{
     margin: 0 0;
-  }
+  } */
 
   .navigator .nav-head__icons{
     display: block;
